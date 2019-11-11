@@ -1,0 +1,27 @@
+[0.034099743980910355, 0.9912]
+
+
+
+
+Convolutions : Convolution is essentially the Hebb's learning rule sum(wi*xi) where wi is the i weights in the kernal 
+and xi is the i inputs to the kernal. 
+
+Filters/Kernals : This is a n*n matrix that slides over the input layers / subsequent layers to extract specifc features from the 
+data/image
+
+Epochs : The number of times the ANN is trained on the entire training dataset is determined by the epochs
+
+1*1 Convolution : The primary use of this convolution is to reduce the z-depth of the DNN in conjunction with max-pooling layer .
+
+3*3 Convolution : The is the convolution size best suited for feature extraction because of its odd-dimension size and the fact that it 
+canconstruct any convolution kernal when layered .
+
+Feature Maps : The number of concepts that are learned by the convolution layer are called Feature Maps. In combination with the number 
+of channels declared and back propagation , CNN's train a number of kernals or feature extractors
+
+Activation Function : This is a function that determines the thresholds that are crossed by inputs of a perceptron  in order to transition 
+from 0 to 1 state. Most common activation functions are Tanh / ReLU / Softmax / Sigmoid etc
+
+Receptive Field : A receptive field is the number of neurons passing information to the current layer from the previous layer . A global 
+receptive field is the number of neurons in the first layer passing information to the current layer. 
+
