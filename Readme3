@@ -26,8 +26,8 @@ model_depth.add(Activation('relu')) # 6*6*192    RF 30*30
 model_depth.add(SeparableConv2D(192, 3, 3)) # 4*4*192    RF 32*32
 model_depth.add(BatchNormalization()) # 4*4*192    RF 32*32
 model_depth.add(Activation('relu')) # 4*4*192    RF 32*32
-model_depth.add(MaxPooling2D(pool_size=(2, 2))) # 2*2*192    RF 64*64
-model_depth.add(Dropout(0.15)) # 2*2*192    RF 64*64
+model_depth.add(MaxPooling2D(pool_size=(2, 2))) # 2*2*192    RF 32*32  (Reception field cant be greater than input dimensions)
+model_depth.add(Dropout(0.15)) # 2*2*192    RF 32*32 (Reception field cant be greater than input dimensions)
 model_depth.add(Flatten())
 model_depth.add(Dense(num_classes, activation='softmax'))
 # Compile the model
